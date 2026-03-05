@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://dayow5isjicgb"]
 
+[ext_resource type="Script" uid="uid://d115bvr0iqtod" path="res://inicio.gd" id="1_q0xg8"]
+[ext_resource type="Texture2D" uid="uid://1jkj0keiae2g" path="res://Texto do seu parágrafo.png" id="2_yogrx"]
+
 [node name="Control" type="Control" unique_id=960353117]
 layout_mode = 3
 anchors_preset = 15
@@ -7,8 +10,21 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_q0xg8")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1668655142]
+layout_mode = 1
+offset_right = 1154.0
+offset_bottom = 648.0
+texture = ExtResource("2_yogrx")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="." unique_id=1423500127]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 533.0
+offset_top = 538.0
+offset_right = 600.0
+offset_bottom = 569.0
+text = "INICIAR"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="STILL HERE"
+run/main_scene="uid://dayow5isjicgb"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
