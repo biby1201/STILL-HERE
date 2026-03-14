@@ -1,14 +1,14 @@
-[gd_scene format=3 uid="uid://6l10lxkywnut"]
+[gd_scene load_steps=3 format=3 uid="uid://6l10lxkywnut"]
 
 [ext_resource type="Script" uid="uid://bdg7b0vmdwa6c" path="res://video_inicial.gd" id="1_7fmty"]
 [ext_resource type="VideoStream" uid="uid://b6jvnvupqsev2" path="res://Texto do seu parágrafo.ogv" id="2_hg5jt"]
 
-[node name="Control" type="Control" unique_id=762994466]
+[node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_7fmty")
 
-[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=493836516]
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
 layout_mode = 0
 offset_right = 2302.0
 offset_bottom = 1298.0

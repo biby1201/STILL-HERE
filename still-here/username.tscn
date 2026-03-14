@@ -1,0 +1,41 @@
+[gd_scene load_steps=2 format=3 uid="uid://is7w06rbg7lh"]
+
+[ext_resource type="Script" uid="uid://cgc7ip6xxmoog" path="res://button.gd" id="1_rtpo6"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 372.0
+offset_top = 210.0
+offset_right = 720.0
+offset_bottom = 237.0
+text = "preciso saber se é confiável, diga seu nome..."
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 323.0
+offset_top = 255.0
+offset_right = 791.0
+offset_bottom = 286.0
+placeholder_text = "username"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.007
+anchor_bottom = 0.044
+offset_left = 513.0
+offset_top = 317.0
+offset_right = 584.936
+offset_bottom = 321.488
+text = "analizar"
+script = ExtResource("1_rtpo6")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
